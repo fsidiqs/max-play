@@ -1,0 +1,53 @@
+Naufal jibriel, [01.12.20 08:33]
+" Kamu punya 2 band favorit, setiap band tesrebut baru saja rilis album baru, kamu membeli kedua album tersebut.
+
+Kamu mengetahui durasi (dalam detik) setiap lagu dalam setiap album. Kamu cata duasi ini dalam int array, int[] durasi1 dan int[] durasi2. Setiap elemen dari durasi1 adalah durasi lagu pada album pertama, dan elemen pada durasi2 adlaah durasi lagu pada album kedua.
+
+Kamu punya waktu terbatas untuk mendengarkan lagu karena harus bekerja. Waktu yang diberikan adalah int X menit. Pada X menit ini kamu harus mendengarkan sebanyak mungkin lagu yang bisa didengarkan, tetapi syaratnya harus ada lagu dari kedua band tersebut, kamus diberikan syarat minimal mendegarkan lagu sebanyak T lagu pada setiap album.
+
+Setiap lagu dihitung jika didengarkan sejak awal sampai akhir, urutan lagu tidak masalah, dan ganti lagu dari satu lagu ke lagu yang lain tidak memakan waktu (0 detik). 
+
+Jika masukan data tidak memungkinkan untuk memutar sebanyak T lagu pada setiap album maka kembalikan nilai -1.
+
+Contoh : 
+
+1) [300, 200, 100], [400,500,600] dan X = 17, T = 1 ~> 4
+Kamu punya 17 menit = 1020 detik, dengan ini bisa mendengarkan 4 lagu (300 + 200 + 100 + 400) = 1000 detik
+
+2) [60,60,60], [60,60,60] dan X = 5, T = 2 ~> 5
+Kamu punya 5 menit, yang artinya bisa memutar 5 lagu, 2 lagu album pertama, 3 lagu album kedua
+
+Jadi buat program untuk menyelesaikan permasalahan diatas
+Kelas : PutarMusik
+Fungsi : jumlahLaguMaksimal
+parameter : int[] durasi1, int[] durasi2, int xMenit, int T_lagu
+Balikan : int
+---------------------------------------------------------------------------------------------------------------
+
+Naufal punya 3 kotak yang disusun dalam baris, kotak pertama berisi sejumlah A permen, kotak kedua berisi sejumlah B permen, dan kotak ketiga berisi C permen
+
+Naufal berpikir jika ketiga kotak ini akan terlihat bagus jika memiliki dua property berikut :
+1. setiap kotak minimal berisi 1 permen
+2. Jumlah permen dalam kotak harus bertambah secara sequential, jadi kotak pertama jumlah permennya harus lebih sedikit dibanding kotak kedua, dan kotak kedua jumlah permennya harus lebih sedikit dibanding kotak ketiga
+
+Satu-satunya cara naufal mengurangi isi permen adalah dengan memakan sejumlah permen
+
+Jika kamu diberikan 3 integer A, B, dan C. hitung dan beri balikan nilai yang paling terkecil yang paling mungkin jumlah permen yang harus Naufal makan agar kotak-kotak itu terlihat bagus. Kembalikan nilai -1 jika tidak memungkinkan
+
+Contoh : 
+
+1) 15, 40, 22 ~> 19
+Naufal cukup memakan sebanyak 19 permen dari kotak kedua sehingga jumlah permen menjadi (15, 21, 22)
+
+2) 5, 6, 6 ~> 2
+Naufal akan memakan 1 permen di kotak pertama dan 1 permen dikotak kedua sehingga jumlah permen menjadi (4, 5, 6)
+
+3) 6, 1, 3000 ~> -1
+Karena kotak kedua hanya berisi 1 permen maka kotak kedua harus berisi 0 jika ingin lebih kecil dari kotak kedua, sedangkan aturannya setiap kotak minimal berisi 1 permen
+
+Jadi buat program untuk menyelesaikan permasalahan diatas
+Kelas : TigaKotakCantik
+Fungsi : jumlahMakanMinimal
+Paramter : int, int, int
+Balikan : int 
+--
